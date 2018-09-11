@@ -4,13 +4,13 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import clases.ClaseTriangulo;
+import clases.Triangulo;
 
 public class TestTriangulo {
 
 	@Test
 	public void CalcularPerimetroDeUnTriangulo() {
-		ClaseTriangulo triangulo1 = new ClaseTriangulo();
+		Triangulo triangulo1 = new Triangulo();
 		Double resultadoEsperado = 6.0;
 		Double resultadoObtenido = triangulo1.calcularPerimetro(2.0, 2.0, 2.0);
       assertEquals(resultadoEsperado, resultadoObtenido);
