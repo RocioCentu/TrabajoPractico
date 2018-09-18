@@ -1,12 +1,18 @@
 package clases;
 
-public class ClaseCirculo {
-	private Double radio;
+public class Circulo {
 	
-	public Double calcularPerimetroDeUnCirculo(Double radio) {
-		return ( (2)* (Math.PI)* (radio));
+	private double radio;
+	
+	public Circulo(double radio) {
+		this.radio = radio;
 	}
-	public Double calcularAreaDeUnCirculo(Double radio) {
-		return ( (2)* Math.pow(radio, 2));
+	
+	public double calcularPerimetroDeUnCirculo() {
+		
+		return ( (2)* (Math.PI)* (this.radio));
+	}
+	public Double calcularAreaDeUnCirculo() {
+		return ( (2)* Math.pow(this.radio, 2));
 	}
 }
