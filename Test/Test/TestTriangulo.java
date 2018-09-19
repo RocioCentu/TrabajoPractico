@@ -10,7 +10,7 @@ public class TestTriangulo {
 
 	@Test
 	public void CalcularPerimetroDeUnTriangulo() {
-		Triangulo triangulo1 = new Triangulo(2.0, 2.0, 2.0, 4.0);
+		Triangulo triangulo1 = new Triangulo(2.0, 2.0, 2.0);
 		Double resultadoEsperado = 6.0;
 		Double resultadoObtenido = triangulo1.calcularPerimetro();
 		assertEquals(resultadoEsperado, resultadoObtenido);
@@ -18,9 +18,9 @@ public class TestTriangulo {
 
 	@Test
 	public void CalcularAreaDeUnTriangulo() {
-		Triangulo triangulo1 = new Triangulo(2.0, 2.0, 2.0, 4.0);
-		Double resultadoEsperado = 4.0;
+		Triangulo triangulo1 = new Triangulo(2.0, 2.0, 2.0);
+		Double resultadoEsperado = 1.7320508;
 		Double resultadoObtenido = triangulo1.calcularArea();
-		assertEquals(resultadoEsperado, resultadoObtenido);
+		assertEquals(resultadoEsperado, resultadoObtenido, 0.002);
 	}
 }
